@@ -1,17 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-<nav class="w-[80%] h-20 bg-black/20 fixed left-1/2 -translate-x-1/2 top-5 rounded-xl">
-    <div class="logo">
-        <h1>shivam sharma</h1>
-        <p>portfolio.</p>
-    </div>
-</nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <header class="w-[90%] mx-auto py-4 flex items-center justify-center">
+      <nav class="flex space-x-8 text-gray-700 text-lg font-medium">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="text-center py-20 px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Shivam</h1>
+      <p class="text-gray-600 text-lg max-w-xl mx-auto mb-6">
+        A passionate Frontend Developer crafting clean & interactive user interfaces.
+      </p>
+      <a href="#projects" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition">
+        View Projects
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-16 px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto">
+        I specialize in building responsive web apps using HTML, CSS, Tailwind, JavaScript, Angular & React. I'm always eager to learn new technologies.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-8">Projects</h2>
+      <div class="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+        <div class="p-6 shadow-md border rounded-xl">
+          <h3 class="text-xl font-semibold mb-2">Project One</h3>
+          <p class="text-gray-600">A modern landing page built with Tailwind CSS.</p>
+        </div>
+        <div class="p-6 shadow-md border rounded-xl">
+          <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+          <p class="text-gray-600">A portfolio website made with React.</p>
+        </div>
+        <div class="p-6 shadow-md border rounded-xl">
+          <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+          <p class="text-gray-600">A blog app using Node.js and MongoDB.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16 px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+      <p class="text-gray-700 mb-4">Email me at: <a href="mailto:shivam@example.com" class="text-blue-600">shivam@example.com</a></p>
+      <a href="#home" class="text-blue-600 hover:underline">Back to top ↑</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-sm text-gray-500 border-t mt-8">
+      &copy; 2025 Shivam. All rights reserved.
+    </footer>
+  </body>
 </html>
